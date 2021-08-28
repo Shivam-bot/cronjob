@@ -15,7 +15,6 @@ def task_add():
   
 
 def start():
-    print('asdd')
     scheduler = BackgroundScheduler()
     scheduler.add_job(task_add, 'interval', seconds=10)
     scheduler.start()
